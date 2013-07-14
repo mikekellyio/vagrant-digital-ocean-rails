@@ -1,7 +1,14 @@
 Vagrant.configure("2") do |config|
+  
+  config.vm.provider :digital_ocean do |provider|
+    provider.client_id = ENV['DO_CLIENT_ID']
+    provider.api_key = ENV['DO_API_KEY']
+  end
+
   config.vm.define :web do |web|
-    web.vm.box = "precise64"
-    web.vm.box_url = "http://files.vagrantup.com/precise64.box"
+    web.vm.box = 'precise64'
+    web.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+    
     web.vm.network :private_network, ip: "192.168.60.10"
     web.berkshelf.enabled = true
  
