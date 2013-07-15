@@ -6,6 +6,15 @@
     "build-essential": {
       "locked_version": "1.4.0"
     },
+    "users": {
+      "locked_version": "1.5.0"
+    },
+    "curl": {
+      "locked_version": "1.1.0"
+    },
+    "sudo": {
+      "locked_version": "2.1.2"
+    },
     "rvm": {
       "locked_version": "0.9.1",
       "git": "git://github.com/fnichol/chef-rvm.git",
@@ -15,6 +24,9 @@
       "locked_version": "0.9.0",
       "git": "https://github.com/fnichol/chef-git.git",
       "ref": "6c19cbefcdad5ec0f62a64dae1f656d660698ea3"
+    },
+    "nginx": {
+      "locked_version": "1.7.0"
     },
     "postgresql": {
       "locked_version": "3.0.2"
@@ -36,6 +48,9 @@
     },
     "yum": {
       "locked_version": "2.3.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.10"
     },
     "openssl": {
       "locked_version": "1.0.2"
